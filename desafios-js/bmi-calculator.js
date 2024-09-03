@@ -1,6 +1,9 @@
 function calculateBMI(weight, height){
-    let bmi = weight/(height*height)
+    const bmi = weight/(height*height)
+    let result
+    if(bmi >= 21 && bmi < 25){
+        return 'Normal'
+    }
+    
     return bmi.toFixed(1)
 }
-
-console.log(calculateBMI(70, 1.86))
